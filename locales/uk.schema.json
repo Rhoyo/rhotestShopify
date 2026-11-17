@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>Ми будемо працювати швидко, щоб відправити ваше замовлення якомога швидше. Після відправлення замовлення ви отримаєте електронний лист із подальшою інформацією. Час доставки залежить від вашого місцезнаходження.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "Значки завжди використовуються на мобільних пристроях",
     "applies_on_image_only": "Застосовується лише до зображень",
     "aspect_ratio_adjusted": "Скориговано в деяких макетах",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "Також показувати розташування, позначені як фізична вітрина, де товар є в наявності, навіть якщо вони не пропонують самовивіз."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "Стовпець",
     "product_title": "Назва товару",
     "custom_liquid": "Спеціальний код Liquid",
@@ -690,6 +695,12 @@
     "below_media": "Під мультимедіа"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "Акордеон",
     "account": "Акаунт",
     "actions_display_style": "Стиль меню",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "Показувати фізичні магазини"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "Заголовок акордеона",
     "are_purchases_final_sale": "Чи є товари, що не підлягають поверненню?",
     "be_bold": "Будьте сміливими.",

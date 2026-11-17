@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>Radićemo brzo da bismo poslali vašu porudžbinu što je pre moguće. Kada porudžbina bude poslata, dobićete imejl sa daljim informacijama. Vreme isporuke se razlikuje u zavisnosti od vaše lokacije.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "Ikonice se uvek koriste na mobilnom uređaju",
     "applies_on_image_only": "Primenjuje se samo na slike",
     "aspect_ratio_adjusted": "Prilagođeno u nekim rasporedima",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "Navedite i lokacije označene kao fizički izlog koje imaju proizvod na zalihama, čak i kada ne nude preuzimanje."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "Kolona",
     "product_title": "Naziv proizvoda",
     "custom_liquid": "Prilagođeni Liquid",
@@ -690,6 +695,12 @@
     "below_media": "Ispod medija"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "Harmonika",
     "account": "Nalog",
     "actions_display_style": "Stil menija",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "Prikaži fizičke prodavnice"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "Naslov harmonike",
     "are_purchases_final_sale": "Da li su neke kupovine konačne?",
     "be_bold": "Budite odvažni.",

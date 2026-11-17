@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>వీలైనంత త్వరగా మీ ఆర్డర్‌ను షిప్ చేయడానికి మేము వేగంగా పని చేస్తాము. మీ ఆర్డర్ షిప్ చేయబడిన తర్వాత, మీరు తదుపరి సమాచారంతో కూడిన ఇమెయిల్‌ను అందుకుంటారు. మీ లొకేషన్‌ను బట్టి డెలివరీ సమయాలు మారుతూ ఉంటాయి.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "మొబైల్‌లో ఎల్లప్పుడూ ఐకాన్‌లు ఉపయోగించబడతాయి",
     "applies_on_image_only": "చిత్రాలకు మాత్రమే వర్తిస్తుంది",
     "aspect_ratio_adjusted": "కొన్ని లేఅవుట్‌లలో అడ్జస్ట్ చేయబడింది",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "పికప్‌ను అందించనప్పటికీ, ఉత్పత్తి స్టాక్‌లో ఉన్న భౌతిక స్టోర్‌ఫ్రంట్‌గా మార్క్ చేయబడిన లొకేషన్‌లను కూడా జాబితా చేయండి."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "నిలువు వరుస",
     "product_title": "ఉత్పత్తి శీర్షిక",
     "custom_liquid": "కస్టమ్ Liquid",
@@ -690,6 +695,12 @@
     "below_media": "మీడియా దిగువన"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "అకార్డియన్",
     "account": "ఖాతా",
     "actions_display_style": "మెనూ స్టైల్",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "భౌతిక స్టోర్‌లను చూపించండి"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "అకార్డియన్ శీర్షిక",
     "are_purchases_final_sale": "ఏవైనా కొనుగోళ్లు ఫైనల్ సేలా?",
     "be_bold": "ధైర్యంగా ఉండండి.",

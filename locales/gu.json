@@ -158,6 +158,13 @@
       "success": "ટિપ્પણી પોસ્ટ થઈ ગઈ છે"
     }
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "cancel": "રદ કરો",
     "discount": "ડિસ્કાઉન્ટ",

@@ -173,6 +173,13 @@
       "success": "Comment posted"
     }
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "cancel": "Cancel",
     "discount": "Discount",

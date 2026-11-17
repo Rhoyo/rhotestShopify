@@ -161,6 +161,13 @@
       "success": "Komentar je objavljen"
     }
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "cancel": "Otkaži",
     "discount": "Popust",

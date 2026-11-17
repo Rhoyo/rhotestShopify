@@ -9,6 +9,8 @@
  */
 {
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "404": "404",
     "colors": "カラーパレット",
     "custom_section": "カスタムセクション",
@@ -171,6 +173,12 @@
     "disclosures": "開示情報"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "alignment": "配置",
     "autoplay": "自動再生",
     "background": "背景",
@@ -1055,6 +1063,8 @@
     "introducing_p": "<p><em>新登場</em></p>"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "button_label": "今すぐ購入",
     "collapsible_row": "折りたたみ可能な行",
     "heading": "見出し",
@@ -1093,6 +1103,9 @@
     "disclosures": "開示情報"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "video_alt_text": "支援技術のユーザーのために動画の説明を記述します",
     "video_autoplay": "動画はデフォルトでミュートになります",
     "video_external": "YouTubeまたはVimeoのURLを使用します",

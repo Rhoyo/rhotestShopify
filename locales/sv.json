@@ -138,6 +138,13 @@
     "back_to_main_menu": "Tillbaka till huvudmenyn",
     "zoom_media": "Zooma media {{ index }}"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "recensioner",
     "language": "Språk",

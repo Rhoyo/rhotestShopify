@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>Treballarem ràpidament per enviar la comanda al més aviat possible. Quan s'hagi enviat la comanda, rebràs un correu electrònic amb més informació. Els terminis de lliurament varien en funció de la teva ubicació.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "Les icones s'utilitzen sempre a la versió per a mòbils",
     "applies_on_image_only": "Només s'aplica a les imatges",
     "aspect_ratio_adjusted": "Ajustada en alguns dissenys",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "Mostra també les ubicacions marcades com a aparador físic que tenen el producte en estoc, encara que no ofereixin recollida."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "Columna",
     "product_title": "Nom del producte",
     "custom_liquid": "Liquid personalitzat",
@@ -690,6 +695,12 @@
     "below_media": "Sota els elements multimèdia"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "Acordió",
     "account": "Compte",
     "actions_display_style": "Estil del menú",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "Mostra les botigues físiques"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "Encapçalament de l'acordió",
     "are_purchases_final_sale": "Hi ha alguna compra que sigui de venda final?",
     "be_bold": "Sigues atrevit.",

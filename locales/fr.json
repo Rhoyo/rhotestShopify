@@ -140,6 +140,13 @@
     "back_to_main_menu": "Retour au menu principal",
     "zoom_media": "Zoom du support multimédia {{ index }}"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "avis",
     "language": "Langue",

@@ -138,6 +138,13 @@
     "zoom_media": "ซูมสื่อ {{ index }}",
     "back_to_main_menu": "กลับไปที่เมนูหลัก"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "รีวิว",
     "language": "ภาษา",

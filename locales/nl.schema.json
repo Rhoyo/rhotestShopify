@@ -9,6 +9,8 @@
  */
 {
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "404": "404",
     "custom_section": "Aangepaste sectie",
     "icon": "Pictogram",
@@ -171,6 +173,12 @@
     "disclosures": "Toelichtingen"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "autoplay": "Automatisch afspelen",
     "background": "Achtergrond",
     "border_radius": "Hoekradius",
@@ -1055,6 +1063,8 @@
     "featured_collection_h3": "<h3>Uitgelichte collectie</h3>"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "collapsible_row": "Inklapbare rij",
     "button_label": "Shop nu",
     "heading": "Kop",
@@ -1093,6 +1103,9 @@
     "disclosures": "Toelichtingen"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "carousel_layout_on_mobile": "Op mobiel wordt altijd een carrousel gebruikt",
     "video_alt_text": "Beschrijf de video voor gebruikers van ondersteunende technologie",
     "video_autoplay": "Video's worden standaard gedempt",

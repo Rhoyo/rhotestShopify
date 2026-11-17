@@ -1,0 +1,220 @@
+{% doc %}
+  Renders a live countdown (days, hours, minutes, seconds) to a merchant-set date.
+  The end date is read from `block.settings.end_date` as "YYYY-MM-DD HH:MM" in the
+  shop's time zone. Liquid renders the initial values; `countdown-timer.js` ticks them.
+  Renders nothing when the date is blank or cannot be parsed.
+
+  @example
+  {% content_for 'block', type: 'countdown', id: 'hero-countdown' %}
+{% enddoc %}
+
+{% liquid
+  assign end_epoch = 0
+  if block.settings.end_date != blank
+    assign shop_offset = 'now' | date: '%z'
+    assign end_string = block.settings.end_date | strip | append: ':00 ' | append: shop_offset
+    assign end_epoch = end_string | date: '%s' | plus: 0
+  endif
+
+  assign now_epoch = 'now' | date: '%s' | plus: 0
+  assign remaining = end_epoch | minus: now_epoch
+  if remaining < 0
+    assign remaining = 0
+  endif
+
+  assign days = remaining | divided_by: 86400
+  assign hours = remaining | modulo: 86400 | divided_by: 3600
+  assign minutes = remaining | modulo: 3600 | divided_by: 60
+  assign seconds = remaining | modulo: 60
+%}
+
+{% if end_epoch > 0 %}
+  <countdown-timer
+    class="countdown countdown--{{ block.settings.alignment }}"
+    data-end="{{ end_epoch }}"
+    {% if remaining == 0 %}
+      data-expired
+    {% endif %}
+    {{ block.shopify_attributes }}
+  >
+    {% if block.settings.heading != blank %}
+      <p class="countdown__heading">{{ block.settings.heading | escape }}</p>
+    {% endif %}
+
+    <div
+      class="countdown__units"
+      role="timer"
+      aria-live="off"
+      aria-label="{{ 'countdown.remaining' | t: days: days, hours: hours, minutes: minutes }}"
+      data-label-template="{{ 'countdown.remaining' | t: days: '[days]', hours: '[hours]', minutes: '[minutes]' | escape }}"
+      ref="timer"
+    >
+      {% assign units = 'days,hours,minutes,seconds' | split: ',' %}
+      {% for unit in units %}
+        {% liquid
+          case unit
+            when 'days'
+              assign value = days
+            when 'hours'
+              assign value = hours
+            when 'minutes'
+              assign value = minutes
+            else
+              assign value = seconds
+          endcase
+          assign label_key = 'countdown.' | append: unit
+        %}
+        <div
+          class="countdown__unit"
+          aria-hidden="true"
+        >
+          <span
+            class="countdown__value"
+            ref="{{ unit }}"
+            >{%- if value < 10 -%}0{%- endif -%}{{- value -}}</span
+          >
+          <span class="countdown__label">{{ label_key | t }}</span>
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if block.settings.expired_text != blank %}
+      <p
+        class="countdown__expired"
+        ref="expired"
+      >
+        {{ block.settings.expired_text | escape }}
+      </p>
+    {% endif %}
+  </countdown-timer>
+
+  <script
+    src="{{ 'countdown-timer.js' | asset_url }}"
+    type="module"
+    async
+  ></script>
+{% endif %}
+
+{% stylesheet %}
+  .countdown {
+    --countdown-gap: var(--gap-sm);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--countdown-gap);
+    min-width: 0;
+    color: inherit;
+  }
+
+  .countdown--left {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .countdown--center {
+    align-items: center;
+    text-align: center;
+  }
+
+  .countdown--right {
+    align-items: flex-end;
+    text-align: end;
+  }
+
+  .countdown__heading {
+    margin: 0;
+    font-family: var(--font-subheading--family);
+    font-weight: var(--font-subheading--weight);
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .countdown__units {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--countdown-gap);
+  }
+
+  .countdown__unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-inline-size: 4.5rem;
+    padding-block: 0.75rem;
+    padding-inline: 0.75rem;
+    border-radius: var(--style-border-radius-md);
+    background: rgb(var(--color-background-rgb) / var(--opacity-70));
+    color: var(--color-foreground);
+    backdrop-filter: blur(6px);
+  }
+
+  .countdown__value {
+    font-family: var(--font-heading--family);
+    font-weight: var(--font-heading--weight);
+    font-size: clamp(1.75rem, 5vw, 3rem);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+
+  .countdown__label {
+    margin-block-start: 0.35rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .countdown__expired {
+    display: none;
+    margin: 0;
+    font-family: var(--font-heading--family);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+  }
+
+  .countdown[data-expired] .countdown__expired {
+    display: block;
+  }
+
+  .countdown[data-expired]:has(.countdown__expired) .countdown__units {
+    display: none;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.countdown",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:settings.heading",
+      "default": "t:text_defaults.countdown_heading"
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "t:settings.countdown_end_date",
+      "info": "t:info.countdown_end_date",
+      "default": "2026-12-31 12:00"
+    },
+    {
+      "type": "text",
+      "id": "expired_text",
+      "label": "t:settings.countdown_expired_text",
+      "default": "t:text_defaults.countdown_expired"
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "t:settings.alignment",
+      "default": "center"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.countdown"
+    }
+  ]
+}
+{% endschema %}

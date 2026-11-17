@@ -205,6 +205,10 @@
     assign class = class | append: ' ' | append: collapse_header_paddings_class
   endif
 
+  if section.settings.floating_header
+    assign class = class | append: ' header--floating'
+  endif
+
   # Determine transparent background value
   assign top_transparent = false
   assign bottom_transparent = false
@@ -690,6 +694,36 @@
 
   .header[data-sticky-state='idle'] {
     opacity: 0;
+  }
+
+  /* Floating header: detached, rounded bar inset from the viewport edges. */
+  .header--floating {
+    --header-floating-inset: var(--padding-lg);
+    --header-floating-radius: var(--style-border-radius-pills, 999px);
+
+    margin-block-start: var(--header-floating-inset);
+    margin-inline: var(--header-floating-inset);
+    border-radius: var(--header-floating-radius);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 8%);
+  }
+
+  .header--floating .header__underlay-closed,
+  .header--floating .header__row {
+    border-radius: var(--header-floating-radius);
+  }
+
+  .header-section:has(> .header--floating) {
+    /* Let page content (e.g. the hero) sit behind the floating bar's top gap. */
+    margin-block-end: calc(-1 * var(--header-floating-inset, 1rem));
+  }
+
+  @media screen and (min-width: 750px) {
+    .header--floating {
+      --header-floating-inset: calc(var(--padding-lg) * 1.5);
+
+      max-inline-size: min(1200px, calc(100% - 2 * var(--header-floating-inset)));
+      margin-inline: auto;
+    }
   }
 
   /* ================================
@@ -1565,6 +1599,13 @@
         }
       ],
       "default": "always"
+    },
+    {
+      "type": "checkbox",
+      "id": "floating_header",
+      "label": "t:settings.floating_header",
+      "info": "t:info.floating_header",
+      "default": false
     },
     {
       "type": "range",

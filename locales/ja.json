@@ -138,6 +138,13 @@
     "zoom_media": "ズームメディア {{ index }}",
     "back_to_main_menu": "メインメニューに戻る"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "レビュー",
     "language": "言語",

@@ -142,6 +142,13 @@
     "zoom_media": "Přiblížit média {{ index }}",
     "back_to_main_menu": "Zpět do hlavní nabídky"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "recen.",
     "language": "Jazyk",

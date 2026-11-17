@@ -223,6 +223,9 @@
     "work_quickly_to_ship": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "Icons are always used on mobile",
     "applies_on_image_only": "Applies to images only",
     "aspect_ratio_adjusted": "Adjusted in some layouts",
@@ -254,6 +257,8 @@
     "show_physical_stores_help": "Also list locations marked as a physical storefront that have the product in stock, even when they don't offer pickup."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "Column",
     "product_title": "Product title",
     "custom_liquid": "Custom Liquid",
@@ -748,6 +753,12 @@
     "below_media": "Below media"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "Accordion",
     "account": "Account",
     "actions_display_style": "Menu style",
@@ -1205,6 +1216,8 @@
     "bottom_row_text": "Bottom row text"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "Accordion heading",
     "are_purchases_final_sale": "Are any purchases final sale?",
     "be_bold": "Be bold.",

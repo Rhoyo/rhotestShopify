@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>Mēs rīkosimies ātri, lai nosūtītu tavu pasūtījumu pēc iespējas ātrāk. Kad pasūtījums būs nosūtīts, tu saņemsi e-pastu ar plašāku informāciju. Piegādes laiks atšķiras atkarībā no tavas atrašanās vietas.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "Mobilajās ierīcēs vienmēr tiek izmantotas ikonas",
     "applies_on_image_only": "Attiecas tikai uz attēliem",
     "aspect_ratio_adjusted": "Pielāgots dažos izkārtojumos",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "Rādīt arī tās atrašanās vietas, kas atzīmētas kā fizisks veikals un kurās produkts ir krājumā, pat ja tajās netiek piedāvāta saņemšana."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "Sleja",
     "product_title": "Produkta nosaukums",
     "custom_liquid": "Pielāgots Liquid",
@@ -690,6 +695,12 @@
     "below_media": "Zem multivides"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "Izplešams saraksts",
     "account": "Konts",
     "actions_display_style": "Izvēlnes stils",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "Rādīt fiziskos veikalus"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "Izplešama saraksta virsraksts",
     "are_purchases_final_sale": "Vai ir preces, kuras nevar atgriezt?",
     "be_bold": "Esi drosmīgs.",

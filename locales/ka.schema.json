@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>ჩვენ სწრაფად ვიმუშავებთ, რათა შენი შეკვეთა რაც შეიძლება მალე გამოიგზავნოს. შეკვეთის გაგზავნის შემდეგ მიიღებ ელფოსტას დამატებითი ინფორმაციით. მიწოდების დრო შენს ლოკაციაზეა დამოკიდებული.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "ხატულები ყოველთვის გამოიყენება მობილურზე",
     "applies_on_image_only": "ვრცელდება მხოლოდ სურათებზე",
     "aspect_ratio_adjusted": "მორგებულია ზოგიერთ განლაგებაში",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "ასევე ჩამოთვალე ლოკაციები, რომლებიც მონიშნულია, როგორც ფიზიკური ვიტრინა და პროდუქტი მარაგში აქვთ, მაშინაც კი, თუ გატანას არ სთავაზობენ."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "სვეტი",
     "product_title": "პროდუქტის სათაური",
     "custom_liquid": "მორგებული Liquid",
@@ -690,6 +695,12 @@
     "below_media": "მედიის ქვემოთ"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "აკორდეონი",
     "account": "ანგარიში",
     "actions_display_style": "მენიუს სტილი",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "ფიზიკური მაღაზიების ჩვენება"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "აკორდეონის სათაური",
     "are_purchases_final_sale": "არის თუ არა შესყიდვები საბოლოო?",
     "be_bold": "იყავი თამამი.",

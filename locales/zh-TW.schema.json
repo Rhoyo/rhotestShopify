@@ -9,6 +9,8 @@
  */
 {
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "404": "404",
     "colors": "調色盤",
     "custom_section": "自訂區段",
@@ -171,6 +173,12 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "alignment": "對齊",
     "autoplay": "自動播放",
     "background": "背景",
@@ -1055,6 +1063,8 @@
     "introducing_p": "<p><em>全新推出</em></p>"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "button_label": "立即選購",
     "collapsible_row": "可摺疊列",
     "heading": "標題",
@@ -1093,6 +1103,9 @@
     "disclosures": "資訊揭露"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "carousel_layout_on_mobile": "在行動裝置上一律使用輪播",
     "video_alt_text": "為使用輔助技術的使用者描述影片",
     "video_autoplay": "影片預設為靜音播放",

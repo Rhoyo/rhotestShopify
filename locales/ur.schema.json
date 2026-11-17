@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>ہم جلد از جلد آپ کا آرڈر شپ کرنے کے لیے تیزی سے کام کریں گے۔ آپ کا آرڈر شپ ہونے کے بعد، آپ کو مزید معلومات کے ساتھ ایک ای میل موصول ہوگی۔ آپ کے مقام کے لحاظ سے ترسیل کے اوقات مختلف ہو سکتے ہیں۔</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "موبائل پر ہمیشہ آئیکن استعمال ہوتے ہیں",
     "applies_on_image_only": "صرف تصاویر پر لاگو ہوتا ہے",
     "aspect_ratio_adjusted": "کچھ لے آؤٹ میں ایڈجسٹ کیا گیا",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "ایسی لوکیشن کو بھی فہرست میں شامل کریں جو فزیکل اسٹور فرنٹ کے طور پر نشان زد ہیں اور جہاں پروڈکٹ اسٹاک میں موجود ہے، چاہے وہ پک اپ کی سہولت فراہم نہ کرتی ہوں۔"
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "کالم",
     "product_title": "پروڈکٹ کا ٹائٹل",
     "custom_liquid": "کسٹم Liquid",
@@ -690,6 +695,12 @@
     "below_media": "میڈیا کے نیچے"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "ایکارڈین",
     "account": "اکاؤنٹ",
     "actions_display_style": "مینو کا اسٹائل",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "فزیکل اسٹور دکھائیں"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "ایکارڈین کی سرخی",
     "are_purchases_final_sale": "کیا کوئی بھی خریداری حتمی سیل ہے؟",
     "be_bold": "نڈر بنیں۔",

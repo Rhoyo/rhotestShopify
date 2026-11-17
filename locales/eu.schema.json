@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>Azkar egingo dugu lan zure eskaera ahalik eta lasterren bidaltzeko. Eskaera bidalitakoan, mezu elektroniko bat jasoko duzu informazio gehiagorekin. Entregatzeko denborak zure kokapenaren araberakoak dira.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "Gailu mugikorretan beti erabiltzen dira ikonoak",
     "applies_on_image_only": "Irudietan soilik aplikatzen da",
     "aspect_ratio_adjusted": "Diseinu batzuetan doituta",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "Zerrendatu produktua izakinetan duten eta erakusleiho fisiko gisa markatutako kokapenak ere, bilketa eskaintzen ez badute ere."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "Zutabea",
     "product_title": "Produktuaren izenburua",
     "custom_liquid": "Liquid pertsonalizatua",
@@ -690,6 +695,12 @@
     "below_media": "Multimedia-edukiaren azpian"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "Akordeoia",
     "account": "Kontua",
     "actions_display_style": "Menuaren estiloa",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "Erakutsi denda fisikoak"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "Akordeoiaren izenburua",
     "are_purchases_final_sale": "Erosketaren bat behin betiko salmenta al da?",
     "be_bold": "Izan ausarta.",

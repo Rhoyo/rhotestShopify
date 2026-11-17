@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>கூடிய விரைவில் உங்கள் ஆர்டரை ஷிப்பிங் செய்ய நாங்கள் துரிதமாகச் செயல்படுவோம். உங்கள் ஆர்டர் ஷிப்பிங் செய்யப்பட்டவுடன், மேலதிகத் தகவல்களுடன் உங்களுக்கு ஒரு மின்னஞ்சல் வரும். டெலிவரி நேரங்கள் உங்கள் இருப்பிடத்தைப் பொறுத்து மாறுபடும்.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "மொபைலில் ஐகான்கள் எப்போதும் பயன்படுத்தப்படும்",
     "applies_on_image_only": "படங்களுக்கு மட்டுமே பொருந்தும்",
     "aspect_ratio_adjusted": "சில தளவமைப்புகளில் சரிசெய்யப்படும்",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "நேரில் பெறுதல் வசதியை வழங்காவிட்டாலும், தயாரிப்பு சரக்கு இருப்பில் உள்ள, நேரடி ஸ்டோர்ஃபிரண்ட் எனக் குறிக்கப்பட்டுள்ள இடங்களையும் பட்டியலிடவும்."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "நெடுவரிசை",
     "product_title": "தயாரிப்புத் தலைப்பு",
     "custom_liquid": "தனிப்பயன் Liquid",
@@ -690,6 +695,12 @@
     "below_media": "மீடியாவுக்குக் கீழே"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "அக்கார்டியன்",
     "account": "கணக்கு",
     "actions_display_style": "மெனு ஸ்டைல்",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "நேரடி ஸ்டோர்களைக் காட்டு"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "அக்கார்டியன் தலைப்பு",
     "are_purchases_final_sale": "ஏதேனும் வாங்குதல்கள் இறுதி விற்பனையா?",
     "be_bold": "தைரியமாக இருங்கள்.",

@@ -142,6 +142,13 @@
     "zoom_media": "Padidinti mediją {{ index }}",
     "back_to_main_menu": "Atgal į pagrindinį meniu"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "apžvalgos (-ų; -a)",
     "language": "Kalba",

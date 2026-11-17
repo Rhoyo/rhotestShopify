@@ -1,0 +1,334 @@
+{% comment %}
+  Section contract.
+  Full-width home hero with a lemonade glass in the background (the SVG illustration
+  by default, or a merchant-selected image) and merchant-managed content blocks, such
+  as a heading, a countdown and a button, layered on top.
+  @example
+  <!-- Add "Lemonade hero" from the theme editor; it is the first section on templates/index.json -->
+{% endcomment %}
+
+{% liquid
+  assign has_custom_background = false
+  if section.settings.background_color != blank and section.settings.background_color.alpha != 0
+    assign has_custom_background = true
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+
+  assign overlay_alpha = section.settings.overlay_opacity | divided_by: 100.0
+%}
+
+<div
+  class="lemonade-hero lemonade-hero--{{ section.settings.section_height }} lemonade-hero--glass-{{ section.settings.glass_position }}{% if has_custom_background %} lemonade-hero--custom-bg color-custom-{{ section.id }}{% endif %}"
+  style="
+    --glass-tint: {{ section.settings.glass_tint }};
+    --glass-accent: {{ section.settings.glass_accent }};
+    --lemonade-hero-overlay: {{ overlay_alpha }};
+    --lemonade-hero-padding-block-start: {{ section.settings['padding-block-start'] }}px;
+    --lemonade-hero-padding-block-end: {{ section.settings['padding-block-end'] }}px;
+  "
+>
+  <div class="lemonade-hero__media">
+    {% if section.settings.image != blank %}
+      {% liquid
+        if section.index == 1
+          assign loading = 'eager'
+          assign fetchpriority = 'high'
+        else
+          assign loading = 'lazy'
+          assign fetchpriority = 'auto'
+        endif
+      %}
+      {{
+        section.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          class: 'lemonade-hero__image',
+          widths: '750, 1100, 1500, 1880, 2200, 2880, 3840',
+          sizes: '100vw',
+          loading: loading,
+          fetchpriority: fetchpriority,
+          alt: ''
+      }}
+    {% else %}
+      <div class="lemonade-hero__glass-wrap">
+        {% render 'lemonade-glass-svg', class: 'lemonade-hero__glass', id: section.id %}
+      </div>
+    {% endif %}
+    <div
+      class="lemonade-hero__overlay"
+      aria-hidden="true"
+    ></div>
+  </div>
+
+  <div class="lemonade-hero__content page-width">
+    {% content_for 'blocks' %}
+  </div>
+</div>
+
+{% stylesheet %}
+  .lemonade-hero {
+    --lemonade-hero-min-height: 70svh;
+
+    position: relative;
+    display: grid;
+    min-block-size: var(--lemonade-hero-min-height);
+    overflow: hidden;
+    isolation: isolate;
+    background:
+      radial-gradient(circle at 70% 40%, rgb(255 255 255 / 55%), transparent 55%),
+      linear-gradient(160deg, #fff8d6 0%, #ffe98a 100%);
+    color: var(--color-foreground);
+  }
+
+  .lemonade-hero--custom-bg {
+    background: var(--color-background);
+  }
+
+  .lemonade-hero--small {
+    --lemonade-hero-min-height: 50svh;
+  }
+
+  .lemonade-hero--large {
+    --lemonade-hero-min-height: 85svh;
+  }
+
+  .lemonade-hero--full-screen {
+    --lemonade-hero-min-height: 100svh;
+  }
+
+  .lemonade-hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .lemonade-hero__image {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .lemonade-hero__glass-wrap {
+    position: absolute;
+    inset-block: 6% 0;
+    inset-inline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .lemonade-hero--glass-end .lemonade-hero__glass-wrap {
+    justify-content: flex-end;
+    padding-inline-end: 6%;
+  }
+
+  .lemonade-hero__glass {
+    block-size: 92%;
+    opacity: 0.9;
+  }
+
+  .lemonade-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(255 255 255 / var(--lemonade-hero-overlay));
+  }
+
+  .lemonade-hero__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-xl, 1.5rem);
+    min-width: 0;
+    padding-block: var(--lemonade-hero-padding-block-start) var(--lemonade-hero-padding-block-end);
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .lemonade-hero--glass-end .lemonade-hero__content {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  @media screen and (max-width: 749px) {
+    .lemonade-hero--glass-end .lemonade-hero__glass-wrap {
+      justify-content: center;
+      padding-inline-end: 0;
+    }
+
+    .lemonade-hero--glass-end .lemonade-hero__content {
+      align-items: center;
+      text-align: center;
+    }
+
+    .lemonade-hero__glass {
+      block-size: 80%;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.lemonade_hero",
+  "class": "section-wrapper",
+  "blocks": [
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:content.media"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:settings.image",
+      "info": "t:info.lemonade_hero_image"
+    },
+    {
+      "type": "select",
+      "id": "glass_position",
+      "label": "t:settings.glass_position",
+      "options": [
+        {
+          "value": "center",
+          "label": "t:options.center"
+        },
+        {
+          "value": "end",
+          "label": "t:options.right"
+        }
+      ],
+      "default": "center",
+      "visible_if": "{{ section.settings.image == blank }}"
+    },
+    {
+      "type": "color",
+      "id": "glass_tint",
+      "label": "t:settings.glass_tint",
+      "default": "#F7E26B",
+      "visible_if": "{{ section.settings.image == blank }}"
+    },
+    {
+      "type": "color",
+      "id": "glass_accent",
+      "label": "t:settings.glass_accent",
+      "default": "#E84A5F",
+      "visible_if": "{{ section.settings.image == blank }}"
+    },
+    {
+      "type": "header",
+      "content": "t:content.colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "alpha": true,
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "t:settings.overlay_opacity",
+      "min": 0,
+      "max": 90,
+      "step": 5,
+      "unit": "%",
+      "default": 35
+    },
+    {
+      "type": "header",
+      "content": "t:content.layout"
+    },
+    {
+      "type": "select",
+      "id": "section_height",
+      "label": "t:settings.height",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:options.small"
+        },
+        {
+          "value": "medium",
+          "label": "t:options.medium"
+        },
+        {
+          "value": "large",
+          "label": "t:options.large"
+        },
+        {
+          "value": "full-screen",
+          "label": "t:options.full_screen"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 72
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.lemonade_hero",
+      "category": "t:categories.banners",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Fresh-squeezed lemonade</h1>",
+            "type_preset": "h1",
+            "alignment": "center"
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "end_date": "2026-12-31 12:00"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "label": "Shop lemonade",
+            "link": "shopify://collections/lemonades"
+          }
+        }
+      },
+      "block_order": ["heading", "countdown", "button"]
+    }
+  ]
+}
+{% endschema %}

@@ -158,6 +158,13 @@
       "success": "S'ha publicat el comentari"
     }
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "cancel": "Cancel·la",
     "discount": "Descompte",

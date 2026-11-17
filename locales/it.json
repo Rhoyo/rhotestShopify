@@ -140,6 +140,13 @@
     "zoom_media": "Zoom media {{ index }}",
     "back_to_main_menu": "Torna al menu principale"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "recensioni",
     "no_results_found": "Nessun risultato trovato",

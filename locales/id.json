@@ -138,6 +138,13 @@
     "back_to_main_menu": "Kembali ke menu utama",
     "zoom_media": "Perbesar media {{ index }}"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "ulasan",
     "language": "Bahasa",

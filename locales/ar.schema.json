@@ -215,6 +215,9 @@
     "work_quickly_to_ship": "<p>سنعمل بسرعة لشحن طلبك في أقرب وقت ممكن. بمجرد شحن طلبك، ستتلقى رسالة بريد إلكتروني تحتوي على مزيد من المعلومات. تختلف أوقات التوصيل حسب موقعك.</p>"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "actions_display_style": "تُستخدم الأيقونات دائماً على الهاتف المحمول",
     "applies_on_image_only": "ينطبق على الصور فقط",
     "aspect_ratio_adjusted": "معدل في بعض التخطيطات",
@@ -246,6 +249,8 @@
     "show_physical_stores_help": "إدراج المواقع المحددة كواجهة متجر فعلية والتي يتوفر فيها المنتج في المخزون أيضًا، حتى عندما لا توفر استلام الطلب."
   },
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "column": "عمود",
     "product_title": "عنوان المنتج",
     "custom_liquid": "Liquid مخصص",
@@ -690,6 +695,12 @@
     "below_media": "أسفل الوسائط"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "accordion": "أكورديون",
     "account": "حساب",
     "actions_display_style": "نمط القائمة",
@@ -1107,6 +1118,8 @@
     "show_physical_stores": "إظهار المتاجر الفعلية"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "accordion_heading": "عنوان القائمة المنسدلة",
     "are_purchases_final_sale": "هل هناك أي مشتريات تعتبر بيعاً نهائياً؟",
     "be_bold": "كن جريئًا.",

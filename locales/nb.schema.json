@@ -9,6 +9,8 @@
  */
 {
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "404": "404",
     "colors": "Fargepalett",
     "custom_section": "Egendefinert seksjon",
@@ -171,6 +173,12 @@
     "disclosures": "Opplysninger"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "alignment": "Justering",
     "autoplay": "Autospill",
     "background": "Bakgrunn",
@@ -1055,6 +1063,8 @@
     "featured_collection_h3": "<h3>Utvalgt samling</h3>"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "button_label": "Handle nå",
     "collapsible_row": "Sammenleggbar rad",
     "heading": "Overskrift",
@@ -1093,6 +1103,9 @@
     "disclosures": "Opplysninger"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "carousel_layout_on_mobile": "Karusell brukes alltid på mobil",
     "video_alt_text": "Beskriv videoen for brukere av hjelpeteknologi",
     "video_autoplay": "Videoer dempes som standard",

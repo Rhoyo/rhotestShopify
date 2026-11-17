@@ -142,6 +142,13 @@
     "zoom_media": "Powiększenie multimediów {{ index }}",
     "back_to_main_menu": "Wróć do menu głównego"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "recenzje",
     "language": "Język",

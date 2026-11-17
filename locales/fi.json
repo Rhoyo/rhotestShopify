@@ -138,6 +138,13 @@
     "zoom_media": "Lähennä mediasisältö: {{ index }}",
     "back_to_main_menu": "Takaisin päävalikkoon"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "arvostelua",
     "language": "Kieli",

@@ -142,6 +142,13 @@
     "zoom_media": "Nástroj na priblíženie {{ index }}",
     "back_to_main_menu": "Späť do hlavnej ponuky"
   },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "remaining": "{{ days }} days, {{ hours }} hours, {{ minutes }} minutes remaining"
+  },
   "content": {
     "reviews": "recenz.",
     "no_results_found": "Nenašli sa žiadne výsledky",

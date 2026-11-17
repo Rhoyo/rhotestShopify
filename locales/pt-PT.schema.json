@@ -9,6 +9,8 @@
  */
 {
   "names": {
+    "countdown": "Countdown",
+    "lemonade_hero": "Lemonade hero",
     "404": "404",
     "colors": "Paleta de cores",
     "custom_section": "Secção personalizada",
@@ -171,6 +173,12 @@
     "disclosures": "Divulgações"
   },
   "settings": {
+    "floating_header": "Floating header",
+    "countdown_end_date": "End date and time",
+    "countdown_expired_text": "Text after countdown ends",
+    "glass_tint": "Lemonade color",
+    "glass_accent": "Straw color",
+    "glass_position": "Glass position",
     "alignment": "Alinhamento",
     "autoplay": "Reprodução automática",
     "background": "Fundo",
@@ -1055,6 +1063,8 @@
     "shop_collection": "<p>Descubra a nossa coleção selecionada, com favoritos escolhidos a dedo que aliam estilo e qualidade.</p>"
   },
   "text_defaults": {
+    "countdown_heading": "Summer menu drops in",
+    "countdown_expired": "The summer menu is here!",
     "button_label": "Comprar agora",
     "collapsible_row": "Linha recolhível",
     "heading": "Título",
@@ -1093,6 +1103,9 @@
     "disclosures": "Divulgações"
   },
   "info": {
+    "floating_header": "Detaches the header into a rounded bar inset from the screen edges",
+    "countdown_end_date": "Format: YYYY-MM-DD HH:MM, in the store's time zone",
+    "lemonade_hero_image": "Replaces the lemonade glass illustration",
     "video_alt_text": "Descreva o vídeo para utilizadores de tecnologia de apoio",
     "video_autoplay": "Os vídeos serão silenciados por predefinição",
     "video_external": "Utilize um URL do YouTube ou do Vimeo",
